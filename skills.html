@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="dashboard.html">SkillBridge</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="skills.html">My Skills</a>
+                <a href="matches.html">Matches</a>
+                <a href="exchanges.html">Exchanges</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" id="logoutBtn" class="btn-secondary">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="skills-section">
+        <div class="container">
+            <h1>Manage Your Skills</h1>
+
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <h2>Add New Skill</h2>
+                    <form id="addSkillForm">
+                        <div class="form-group">
+                            <label for="skillType">Skill Type</label>
+                            <select id="skillType" name="skillType" required>
+                                <option value="OFFER">I Offer This Skill</option>
+                                <option value="REQUEST">I Want to Learn This Skill</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skillName">Skill Name</label>
+                            <input type="text" id="skillName" name="skillName" required
+                                   placeholder="e.g., Web Development, Cooking, Guitar">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <input type="text" id="category" name="category"
+                                   placeholder="e.g., Technology, Arts, Sports">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proficiency">Proficiency Level</label>
+                            <select id="proficiency" name="proficiency">
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate" selected>Intermediate</option>
+                                <option value="expert">Expert</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="3"
+                                      placeholder="Describe your experience or learning goals..."></textarea>
+                        </div>
+
+                        <div id="errorMessage" class="error-message"></div>
+                        <div id="successMessage" class="success-message"></div>
+
+                        <button type="submit" class="btn-primary">Add Skill</button>
+                    </form>
+                </div>
+
+                <div class="skills-card">
+                    <h2>Skills I Offer</h2>
+                    <div id="offeredSkills" class="user-skills-list">
+                        <p class="empty-state">No skills offered yet</p>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h2>Skills I Want to Learn</h2>
+                    <div id="requestedSkills" class="user-skills-list">
+                        <p class="empty-state">No skills requested yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>

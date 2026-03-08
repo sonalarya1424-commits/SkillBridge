@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exchanges - SkillBridge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="dashboard.html">SkillBridge</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="skills.html">My Skills</a>
+                <a href="matches.html">Matches</a>
+                <a href="exchanges.html">Exchanges</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" id="logoutBtn" class="btn-secondary">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="exchanges-section">
+        <div class="container">
+            <h1>My Exchanges</h1>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="all">All</button>
+                <button class="tab-btn" data-tab="PENDING">Pending</button>
+                <button class="tab-btn" data-tab="ACCEPTED">Accepted</button>
+                <button class="tab-btn" data-tab="COMPLETED">Completed</button>
+            </div>
+
+            <div id="exchangesContainer" class="exchanges-container">
+                <p class="empty-state">Loading exchanges...</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="ratingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Rate This Exchange</h2>
+            <form id="ratingForm">
+                <input type="hidden" id="exchangeId" name="exchangeId">
+                <input type="hidden" id="ratedUserId" name="ratedUserId">
+
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="star-rating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="review">Review (Optional)</label>
+                    <textarea id="review" name="review" rows="4"
+                              placeholder="Share your experience..."></textarea>
+                </div>
+
+                <div id="modalError" class="error-message"></div>
+
+                <button type="submit" class="btn-primary">Submit Rating</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/exchanges.js"></script>
+</body>
+</html>
