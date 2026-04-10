@@ -1,6 +1,35 @@
-# SkillBridge - Peer-to-Peer Skill Exchange Platform
+# SkillBridge - Peer-to-Peer Skill Exchange Platform 🚀
 
+💡 **Learn skills without money by exchanging knowledge with others.**
 SkillBridge is a full-stack web application that enables users to exchange skills without money. Users can offer skills they know and request skills they want to learn, with the system intelligently matching users with complementary skills.
+
+---
+
+## 🚀 Demo Idea
+Example:
+- I teach **Python**
+- I learn **UI/UX**
+
+---
+
+## 🧠 Problem
+Many students have skills but:
+- No access to learn new ones
+- Learning platforms are costly
+- No structured peer learning system
+
+---
+
+## 💡 Solution
+SkillBridge connects users with complementary skills and enables **skill-for-skill exchange**.
+
+---
+
+## 🎥 Demo & Pitch Video
+[Watch Pitch Video](https://drive.google.com/file/d/1mvzUTZJiWYsP2mdAiOvI_p9gnTWLe8ha/view?usp=sharing)
+[Watch Demo Video](https://drive.google.com/file/d/18N8xGiQJgCR9NMcfgMRYefkW6NTR_IWd/view?usp=sharing) 
+
+---
 
 ## Features
 
